@@ -1,0 +1,75 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="j]yr@hkkFQop,_m;WZVy" islocal="false" iscloud="false">jet</variable>
+    <variable type="" id="*rZW/7dv!nwJrDP8}H@|" islocal="false" iscloud="false">n</variable>
+    <variable type="" id="nSk*,_nm0,;{/qfTi5pM" islocal="false" iscloud="false">somme</variable>
+  </variables>
+  <block type="event_whenflagclicked" id="w:1i[$^?J)c+^r0;Lpti" x="-198" y="40">
+    <field name="MY_ICON_BUTTON">./js/scratch/media/green-flag.svg</field>
+    <next>
+      <block type="data_setvariableto" id="Qr56h/DKjGMZ()!C4^3+">
+        <field name="VARIABLE" id="*rZW/7dv!nwJrDP8}H@|" variabletype="">n</field>
+        <value name="VALUE">
+          <shadow type="text" id="%4i]tk*Csm_Qxans=/Hr">
+            <field name="TEXT">100</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="data_setvariableto" id="Ec}[wz)8H{yt)LY]Gf$U">
+            <field name="VARIABLE" id="nSk*,_nm0,;{/qfTi5pM" variabletype="">somme</field>
+            <comment id="2_p[5h7qsi^-6nCbvHZ8" pinned="true" h="106.66666412353516" w="181.3333740234375" x="68" y="80.33333333333334" minimized="false">valeur initiale de la somme à compléter</comment>
+            <value name="VALUE">
+              <shadow type="text" id="].S:`NZp+(jPq]7}B^=e">
+                <field name="TEXT"></field>
+              </shadow>
+            </value>
+            <next>
+              <block type="control_repeat" id="Zo=_$8pU!tyvH;JYJpSa">
+                <value name="TIMES">
+                  <shadow type="math_whole_number" id="U}Q6u90y/?54aW*UzrEi">
+                    <field name="NUM"></field>
+                  </shadow>
+                  <block type="data_variable" id="A,wFk*(|B(LNv6{Zg3(m">
+                    <field name="VARIABLE" id="*rZW/7dv!nwJrDP8}H@|" variabletype="">n</field>
+                  </block>
+                </value>
+                <statement name="SUBSTACK">
+                  <block type="data_setvariableto" id="fa5PeX`BGogTW;OA[.6i">
+                    <field name="VARIABLE" id="j]yr@hkkFQop,_m;WZVy" variabletype="">jet</field>
+                    <value name="VALUE">
+                      <shadow type="text" id="hfe;0i~{gR=frtKWl^c2">
+                        <field name="TEXT">0</field>
+                      </shadow>
+                      <block type="operator_random" id=":Jz3[+c{SbX9tO;R$oPH">
+                        <value name="FROM">
+                          <shadow type="math_number" id="~M4K{`w-AHp-mkywt;9z">
+                            <field name="NUM">1</field>
+                          </shadow>
+                        </value>
+                        <value name="TO">
+                          <shadow type="math_number" id="GgzD.(@n7QsnpM;ynktt">
+                            <field name="NUM">6</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+                <next>
+                  <block type="looks_say" id=";/vGN*?pZDR]3?7pJ1v|">
+                    <comment id="sb7),={=yt(Nk1}P|t*-" pinned="true" h="110.66665649414062" w="228" x="-8" y="295.00000000000006" minimized="false">Afficher la moyenne des n lancers d'un dé non truqué</comment>
+                    <value name="MESSAGE">
+                      <shadow type="text" id="F{nz5n5B;^[J`;n)w{$S">
+                        <field name="TEXT"></field>
+                      </shadow>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
