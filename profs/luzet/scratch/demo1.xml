@@ -1,0 +1,48 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="af{X#IYkrhtx9=KRGcUw" islocal="false" iscloud="false">n</variable>
+    <variable type="" id="xG1QH:089Gi9gBvO}GW^" islocal="false" iscloud="false">cote</variable>
+  </variables>
+  <block type="event_whenflagclicked" id="w:1i[$^?J)c+^r0;Lpti" x="20" y="33">
+    <field name="MY_ICON_BUTTON">./js/scratch/media/green-flag.svg</field>
+    <next>
+      <block type="data_setvariableto" id="P[Bk^?Fw5x]*-Eu@mV+U">
+        <field name="VARIABLE" id="af{X#IYkrhtx9=KRGcUw" variabletype="">n</field>
+        <value name="VALUE">
+          <shadow type="text" id="sQW(j?9d`.@(o%s?D-^i">
+            <field name="TEXT">6</field>
+          </shadow>
+          <block type="ggb_valeur_de" id="8Ruo-_v5FHEFMKG6ne[I">
+            <value name="NAME">
+              <shadow type="text" id="dNk+.vFW8xX;GtY9Iq.(">
+                <field name="TEXT">n</field>
+              </shadow>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="control_repeat" id="DZU;JlJ*LrHy?jA@*yoy">
+            <value name="TIMES">
+              <shadow type="math_whole_number" id="Nf97;Dn52`TpWz:UV[?V">
+                <field name="NUM"></field>
+              </shadow>
+              <block type="data_variable" id="bN#-wPaOQg_Z525(57ou">
+                <field name="VARIABLE" id="af{X#IYkrhtx9=KRGcUw" variabletype="">n</field>
+              </block>
+            </value>
+            <statement name="SUBSTACK">
+              <block type="avancer_reculer" id="-7U2D?oH]MK@JPEk#Yv3">
+                <field name="OP">forward</field>
+                <value name="NAME">
+                  <shadow type="math_number" id="MOXubO]VZn!MVxz6y7uw">
+                    <field name="NUM">1</field>
+                  </shadow>
+                </value>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

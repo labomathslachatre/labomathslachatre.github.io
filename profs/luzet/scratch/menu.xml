@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<xml id="toolbox" style="display: none">
+	<category name="Atelier collège" id="demos" colour="#FFFF00" secondaryColour="#FFFF00">
+		<button text="Escalier (curseur)" callbackKey="demo1" prog="../profs/raffinatp/scratch/demo1.xml" geo="../profs/raffinatp/scratch/curseur.ggb">
+<![CDATA[
+- dans GeoGebra, change la valeur du curseur n
+- construis un escalier à n marches de taille 1
+- anime dans GeoGebra le curseur n (icone en bas à gauche)
+]]>
+		</button>
+		<button text="Calcul formel" callbackKey="demo2" prog="../profs/raffinatp/scratch/demo2.xml" geo="../profs/raffinatp/scratch/geogebra.ggb">
+<![CDATA[
+- complète le programme : divise n par 2
+- change la valeur initiale de n : x, puis 1/7...
+- change encore : 1/7 (directement, sans nouveau bloc donc)
+]]>
+		</button>
+		<button text="Triangle (médianes)" callbackKey="demo3" prog="../profs/raffinatp/scratch/demo3.xml" geo="../profs/raffinatp/scratch/geogebra.ggb">
+<![CDATA[
+- crée les 2 autres médianes avec les 2 blocs rouges
+- clique sur le bouton "drapeau vert" en haut à droite
+- dans GeoGebra, déplace les sommets du triangle : que constate t-on ?
+]]>
+		</button>
+	</category>
+	<category name="Sixieme" id="sixieme" colour="#FFFF00" secondaryColour="#FFFF00">
+			<button text="Escalier" callbackKey="sixieme1" prog="exos/boucles_bornees/q2_prog.xml" geo="exos/boucles_bornees/q2_geogebra.ggb">	
+<![CDATA[
+- Construis cet escalier avec la tortue
+]]>
+			</button>
+			<button text="Chat" callbackKey="sixieme2" geo="exos/geometrie/chat/geogebra.ggb" menu="exos/geometrie/chat/menu.xml" prog="exos/geometrie/chat/prog.xml">
+<![CDATA[
+- clique sur le bouton "drapeau vert" en haut à droite
+- mets à 1 le rayon du cercle vert : la question GeoGebra change...
+- pour continuer l'activité, clique sur <a href ="index.html?url=exos/geometrie/chat" target="_blank">Tester</a>
+- pour te documenter, clique sur <a href ="https://view.genially.com/60811ee34298ce0d07466cde/presentation-scratchggb" target="_blank">Genially</a> 
+]]>
+			</button>
+	</category>
+</xml>
