@@ -553,9 +553,11 @@ Blockly.Blocks['ggb_commande_2pts_fonct'] = {
              ["Cercle", 'Circle'],
              ["DemiCercle", 'Semicircle'],
              ["Milieu", 'Midpoint'],
-             ["Symétrique", 'Reflect'],
+             ["Intersection", 'Intersect'],
              ["Perpendiculaire", 'PerpendicularLine'],
              ["Parallèle", ' Line'],
+             ["Tangente", 'Tangent'],
+             ["Symétrique", 'Reflect'],
              ["Translation", 'Translate'],
              ["Vecteur", 'Vector']
 			]
@@ -644,6 +646,9 @@ Blockly.Blocks['ggb_1_arg_fonct'] = {
           "options":
             [['abscisse de', 'coordX'],
 			 ['ordonnee de', 'coordY'],
+			 ['valeur de', 'valeur'],
+			 ['point sur', 'PointSur'],
+			 ['GGB', 'GGB'],
              ["visibilité de", 'ggbApplet.getVisible'],
              ["nouveau nom", 'nouveau']
 			]

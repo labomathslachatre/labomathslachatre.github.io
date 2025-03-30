@@ -360,6 +360,22 @@ Blockly.JavaScript['ggb_coordY'] = function(block) {
   return [code, Blockly.JavaScript.ORDER_MEMBER];
 };
 
+function PointSur(obj1) { // pour bloc ggb_1_arg_fonct
+	commandeG('Point(@1)',obj1);
+	return ggbApplet.getObjectName( ggbApplet.getObjectNumber() - 1 );
+	/*
+	commandeG('Point(@1)',obj1);
+	var nouveau = ggbApplet.getObjectName( ggbApplet.getObjectNumber() - 1 );
+	ggbApplet.setAnimating(nouveau,true);
+	return nouveau;
+	*/
+}
+
+function GGB(modele,param1,param2) { // pour bloc ggb_1_arg_fonct
+	commandeG(modele,param1,param2);
+	return ggbApplet.getObjectName( ggbApplet.getObjectNumber() - 1 );
+}
+
 Blockly.JavaScript['ggb_1_arg_fonct'] = function(block) {
   var obj1 = Blockly.JavaScript.valueToCode(block, 'OBJ1',
       Blockly.JavaScript.ORDER_MEMBER) || "''";
