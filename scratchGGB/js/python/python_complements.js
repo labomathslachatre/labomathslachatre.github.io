@@ -282,7 +282,7 @@ Blockly.Python['ggb_couleur_remplissage'] = function(block) {
   var r = hexToRgb(coul).r;
   var g = hexToRgb(coul).g;
   var b = hexToRgb(coul).b;
-  code = "colorier(" + obj1 + "," + r + "," +g + "," + b + ");\n";
+  code = "colorier(" + obj1 + "," + r + "," +g + "," + b + ")\n";
   return code;
 };
 
@@ -308,6 +308,7 @@ Blockly.Python['ggb_commande_2pts_fonct'] = function(block) {
       Blockly.Python.ORDER_MEMBER) || "''";
   var obj2 = Blockly.Python.valueToCode(block, 'OBJ2',
       Blockly.Python.ORDER_MEMBER) || "''";
+  if (op==" Line") op="Parallele";
   var op = block.getFieldValue('OP').trim();
   // var code = "commandeG('@1=" + op + "(@2,@3)'," + nom + ',' + obj1 + ',' + obj2 + "); \n"; 
   var code = op + "(" + obj1 + "," + obj2 + ")";
@@ -356,7 +357,7 @@ Blockly.Python['ggb_1_arg'] = function(block) {
 	return code;
   }
   op = op.split("ggbApplet.").join("");
-  code = op + "(" + nom + "," + obj1 + ");\n";
+  code = op + "(" + nom + "," + obj1 + ")\n";
   return code; 
 };
 
