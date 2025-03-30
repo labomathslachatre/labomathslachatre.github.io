@@ -344,17 +344,18 @@ Blockly.Python['ggb_1_arg'] = function(block) {
   var obj1 = Blockly.Python.valueToCode(block, 'OBJ1',
       Blockly.Python.ORDER_MEMBER) || "''";
   var obj2 = true;
-  var op = block.getFieldValue('OP');
+  var op = block.getFieldValue('OP'); //op="--"+op+"--";
   var code;
   if (op=="Point") {
 	code = "commandeG('@1=" + op + "(@2)'," + nom + ',' + obj1 + "); ";
-	code += "ggbApplet.setAnimating(" + nom + "," + obj2 + ");\n";
+	//code += "ggbApplet.setAnimating(" + nom + "," + obj2 + ");\n";
 	return code;
   }
   if ((op=="")||(op=="fixer_cellule")) {
 	code = "commandeG('@1=@2'," + nom + ',' + obj1 + "); \n";
 	return code;
   }
+  op = op.split("ggbApplet.").join("");
   code = op + "(" + nom + "," + obj1 + ");\n";
   return code; 
 };
