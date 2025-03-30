@@ -69,10 +69,64 @@ var $builtinmodule = function(name)
         return new Sk.builtin.str( ggbApplet.getObjectName( ggbApplet.getObjectNumber() - 1 ) );
     });
     mod.initFigure = new Sk.builtin.func(function() {
-	fixerValeursAsurveiller(['n']);
-	fixerPointsAsurveiller(['P','Q']);
-	//initialiser();
+		fixerValeursAsurveiller(['n']);
+		fixerPointsAsurveiller(['P','Q']);
+		//initialiser();
     });
+	// --------------------------------------------------
+	// GGB La Châtre
+	// --------------------------------------------------
+    mod.commandeG = new Sk.builtin.func(function(obj1,obj2='',obj3='',obj4='',obj5='') {		
+		// exemple 1 : commandeG('@1=Point(@2)','B','f'); 
+		// exemple 2 : commandeG('@1=Segment(@2,@3)','s','A','B');
+		commandeG(obj1.v, obj2.v, obj3.v, obj4.v, obj5.v);
+        return new Sk.builtin.str( ggbApplet.getObjectName( ggbApplet.getObjectNumber() - 1 ) );
+    });
+    mod.GGB = new Sk.builtin.func(function(obj1,obj2='',obj3='',obj4='',obj5='') {		
+		// exemple 1 : commandeG('@1=Point(@2)','B','f'); 
+		// exemple 2 : commandeG('@1=Segment(@2,@3)','s','A','B');
+		commandeG(obj1.v, obj2.v, obj3.v, obj4.v, obj5.v);
+        return new Sk.builtin.str( ggbApplet.getObjectName( ggbApplet.getObjectNumber() - 1 ) );
+    });
+    mod.getX = new Sk.builtin.func(function(obj1) {
+		return parseFloat(coordX(obj1.v));
+    });	
+    mod.getY = new Sk.builtin.func(function(obj1) {
+		return parseFloat(coordY(obj1.v));
+    });	
+    mod.getF = new Sk.builtin.func(function(obj1,obj2) {
+		return parseFloat(valeur(obj1.v+"("+obj2.v+")"));
+    });	
+    mod.PointSur = new Sk.builtin.func(function(obj1,val1=0) {		
+		commandeG("Point(@1)",obj1.v); 
+		var nouveau = ggbApplet.getObjectName( ggbApplet.getObjectNumber() - 1 )
+		//ggbApplet.setValue(obj1.v,val1.v);
+        return new Sk.builtin.str( nouveau );
+    });
+    mod.Tangent = new Sk.builtin.func(function(obj1,obj2) {		
+		commandeG("Tangent(@1,@2)",obj1.v,obj2.v); 
+        return new Sk.builtin.str( ggbApplet.getObjectName( ggbApplet.getObjectNumber() - 1 ) );
+    });
+    mod.Intersect = new Sk.builtin.func(function(obj1,obj2) {		
+		commandeG("Intersect(@1,@2)",obj1.v,obj2.v); 
+        return new Sk.builtin.str( ggbApplet.getObjectName( ggbApplet.getObjectNumber() - 1 ) );
+    });
+    mod.Parallele = new Sk.builtin.func(function(obj1,obj2) {
+		ggbApplet.evalCommand( "Line("+obj1.v+","+obj2.v+")" );
+        return new Sk.builtin.str( ggbApplet.getObjectName( ggbApplet.getObjectNumber() - 1 ) );
+    });
+    mod.setLabelVisible = new Sk.builtin.func(function(obj1,val1) {
+		ggbApplet.setLabelVisible(obj1.v,val1.v);
+    });	
+    mod.setVisible = new Sk.builtin.func(function(obj1,val1) {
+		ggbApplet.setVisible(obj1.v,val1.v);
+    });		
+    mod.setValue = new Sk.builtin.func(function(obj1,val1) {
+		ggbApplet.setValue(obj1.v,val1.v);
+    });	
+    mod.colorier = new Sk.builtin.func(function(obj1,val1,val2,val3) {
+		colorier(obj1.v,val1.v,val2.v,val3.v);
+    });	
 	// --------------------------------------------------
 	// tortue
 	// --------------------------------------------------
