@@ -23,15 +23,34 @@
 	<category name="Seconde" id="seconde" colour="#FFFF00" secondaryColour="#FFFF00">
 			<button text="Pair/Impair" callbackKey="seconde1" prog="exos/python/q1_prog.xml" geo="exos/python/geogebra.ggb">
 <![CDATA[
-- traduis les blocs en python (bouton Traduire)
+- clique sur les boutons 'Python' et 'Traduire'
 - complète le code python pour dire si n est pair ou impair
+- variante : complète d'abord les blocs avant de traduire
 ]]>
 			</button>
 			<button text="Cercles concentriques" callbackKey="seconde2" prog="exos/python/q3_prog.xml" geo="exos/python/q3_geogebra.ggb">
 <![CDATA[
-- clique sur le bouton 'Réinitialiser'
-- traduis les blocs en python
-- complète le code python pour dessiner les 5 cercles
+a) clique sur le bouton 'Réinitialiser'
+b) écris un programme Python dessinant les 5 cercles :
+- soit en complétant les blocs, puis en les traduisant 
+- soit en traduisant les blocs, puis en complétant
+]]>
+			</button>
+			<button text="Tortue et curseur" callbackKey="seconde3" prog="exos/tortue/drapeaux_triangulaires/q4_prog.xml" geo="exos/tortue/drapeaux_triangulaires/q4_geogebra.ggb">
+<![CDATA[
+a) clique sur le bouton 'Réinitialiser'
+b) change la valeur du curseur GeoGebra
+c) ajoute un fanion aux drapeaux (carré de taille 1) :
+- soit en complétant les blocs, puis en les traduisant 
+- soit en traduisant les blocs, puis en complétant
+]]>
+			</button>
+			<button text="Newton" callbackKey="seconde4" prog="../profs/raffinatp/python/newton1.xml" geo="exos/python/geogebra.ggb">
+<![CDATA[
+- déplace le point A sur la courbe
+- traduis les blocs en python (bouton Traduire)
+- complète le code python l'instruction Parallele
+- ajoute une boucle pour la <a href="https://www.mathweb.fr/euclide/methode-de-newton/">méthode de Newton</a>
 ]]>
 			</button>
 	</category>
