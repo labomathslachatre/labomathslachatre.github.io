@@ -307,9 +307,10 @@ Blockly.Python['ggb_commande_2pts_fonct'] = function(block) {
   var obj1 = Blockly.Python.valueToCode(block, 'OBJ1',
       Blockly.Python.ORDER_MEMBER) || "''";
   var obj2 = Blockly.Python.valueToCode(block, 'OBJ2',
-      Blockly.Python.ORDER_MEMBER) || "''";
+      Blockly.Python.ORDER_MEMBER) || "''";	  
+  var op = block.getFieldValue('OP');
   if (op==" Line") op="Parallele";
-  var op = block.getFieldValue('OP').trim();
+  op = op.trim();
   // var code = "commandeG('@1=" + op + "(@2,@3)'," + nom + ',' + obj1 + ',' + obj2 + "); \n"; 
   var code = op + "(" + obj1 + "," + obj2 + ")";
   code = code.replaceAll("'","");
