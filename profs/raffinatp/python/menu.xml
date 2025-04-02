@@ -1,5 +1,337 @@
 <?xml version="1.0"?>
 <xml id="toolbox" style="display: none">
+	<category name="Seconde" id="seconde" colour="#FFFF00" secondaryColour="#FFFF00">
+			<button text="Pair/Impair" callbackKey="seconde1" prog="exos/python/q1_prog.xml" geo="exos/python/geogebra.ggb">
+<![CDATA[
+- clique sur les boutons 'Python' et 'Traduire'
+- complète le code python pour dire si n est pair ou impair
+- variante : complète d'abord les blocs avant de traduire
+]]>
+			</button>
+			<button text="Cercles concentriques" callbackKey="seconde2" prog="exos/python/q3_prog.xml" geo="exos/python/q3_geogebra.ggb">
+<![CDATA[
+a) clique sur le bouton 'Réinitialiser'
+b) écris un programme Python dessinant les 5 cercles :
+- soit en complétant les blocs, puis en les traduisant 
+- soit en traduisant les blocs, puis en complétant le code
+]]>
+			</button>
+			<button text="Tortue et curseur" callbackKey="seconde3" prog="exos/tortue/drapeaux_triangulaires/q4_prog.xml" geo="exos/tortue/drapeaux_triangulaires/q4_geogebra.ggb">
+<![CDATA[
+a) clique sur le bouton 'Réinitialiser'
+b) change la valeur du curseur GeoGebra
+c) ajoute un fanion aux drapeaux (carré de taille 1) :
+- soit en complétant les blocs, puis en les traduisant 
+- soit en traduisant les blocs, puis en complétant le code
+]]>
+			</button>
+			<button text="Newton" callbackKey="seconde4" prog="../profs/raffinatp/python/newton1.xml" geo="../profs/raffinatp/python/repere.ggb">
+<![CDATA[
+- déplace le point A sur la courbe
+- traduis les blocs en python (bouton Traduire)
+- complète le code python l'instruction Parallele
+- ajoute une boucle pour la <a href="https://www.mathweb.fr/euclide/methode-de-newton/">méthode de Newton</a>
+]]>
+			</button>
+			<button text="Chat c'est chouette" callbackKey="seconde5" prog="../profs/raffinatp/python/chatcestchouette1.xml" geo="../profs/raffinatp/python/tableur.ggb">
+<![CDATA[
+Termine cet exercice du Rallye maths 2022 (<a href="https://www.rallyemathematiqueducentre.fr/_files/ugd/5a9b73_19e981e827e941b997ac806d0c2afd34.pdf">chat c'est chouette</a>)
+- soit en complétant les blocs, puis en les traduisant 
+- soit en traduisant les blocs, puis en complétant le code
+]]>
+			</button>
+			<button text="Balle errante" callbackKey="seconde6" prog="../profs/raffinatp/python/balleerrante1.xml" geo="../profs/raffinatp/python/repere.ggb">
+<![CDATA[
+Termine cet exercice du Rallye maths 2020 (<a href="https://www.rallyemathematiqueducentre.fr/_files/ugd/ce79c3_28ee2d806262463b8ae4fce18598a3d1.pdf">chat c'est chouette</a>)
+- soit en complétant les blocs, puis en les traduisant 
+- soit en traduisant les blocs, puis en complétant le code
+]]>
+			</button>
+	</category>
+    <category name="Tortue" id="motion"  colour="#4C97FF" secondaryColour="#3373CC">
+			<block type="avancer_reculer">
+				<value name="NAME">
+					<shadow type="math_number">
+						<field name="NUM">2</field>
+					</shadow>
+				</value>
+			</block>
+			<block type="var_gauche_droite">
+				<value name="NAME">
+					<shadow type="math_number">
+						<field name="NUM">90</field>
+					</shadow>
+				</value>
+			</block>
+			<block type="baisser_lever_stylo"></block>
+    </category>
+    <category name="GeoGebra" id="ggb"  colour="#798933" secondaryColour="#798933">
+            <block type="ggb_point">
+				<value name="NOM">
+					<shadow type="text">
+						<field name="TEXT">A</field>
+					</shadow>
+				</value>
+				<value name="X">
+					<shadow type="math_number">
+						<field name="NUM">1</field>
+					</shadow>
+				</value>
+				<value name="Y">
+					<shadow type="math_number">
+						<field name="NUM">2</field>
+					</shadow>
+				</value>
+			</block>
+            <block type="ggb_commande_2pts">
+				<value name="NOM">
+					<shadow type="text">
+						<field name="TEXT"></field>
+					</shadow>
+				</value>
+				<value name="OBJ1">
+					<shadow type="text">
+						<field name="TEXT"></field>
+					</shadow>
+				</value>
+				<value name="OBJ2">
+					<shadow type="text">
+						<field name="TEXT"></field>
+					</shadow>
+				</value>
+			</block>
+            <block type="ggb_1_arg">
+				<value name="NOM">
+					<shadow type="text">
+						<field name="TEXT"></field>
+					</shadow>
+				</value>
+				<value name="OBJ1">
+					<shadow type="text">
+						<field name="TEXT"></field>
+					</shadow>
+				</value>
+			</block>
+			<block type="ggb_couleur_remplissage">
+				<value name="OBJ1">
+					<shadow type="text">
+						<field name="TEXT"></field>
+					</shadow>
+				</value>
+				<value name="COLOR">
+					<shadow type="colour_picker">
+						<field name="COLOUR">#00ff00</field>
+					</shadow>
+				</value>
+			</block>
+            <block type="ggb_1_arg_fonct">
+				<value name="OBJ1">
+					<shadow type="text">
+						<field name="TEXT">P</field>
+					</shadow>
+				</value>
+			</block>
+            <block type="ggb_commande_2pts_fonct">
+				<value name="NOM">
+					<shadow type="text">
+						<field name="TEXT"></field>
+					</shadow>
+				</value>
+				<value name="OBJ1">
+					<shadow type="text">
+						<field name="TEXT"></field>
+					</shadow>
+				</value>
+				<value name="OBJ2">
+					<shadow type="text">
+						<field name="TEXT"></field>
+					</shadow>
+				</value>
+			</block>
+    </category>
+    <category name="%{BKY_CATEGORY_CONTROL}" id="control" colour="#FFAB19" secondaryColour="#CF8B17">
+        <block type="control_repeat" id="control_repeat">
+            <value name="TIMES">
+                <shadow type="math_whole_number">
+                    <field name="NUM">10</field>
+                </shadow>
+            </value>
+        </block>
+        <block type="control_if" id="control_if"></block>
+        <block type="control_if_else" id="control_if_else"></block>
+        <block type="control_repeat_until" id="control_repeat_until"></block>
+		<block type="controls_for">
+			<field name="VARIABLE">variable</field>
+			<value name="FROM">
+                <shadow type="math_number">
+                    <field name="NUM">1</field>
+                </shadow>
+			</value>
+			<value name="TO">
+                <shadow type="math_number">
+                    <field name="NUM">10</field>
+                </shadow>
+			</value>
+			<value name="BY">
+                <shadow type="math_number">
+                    <field name="NUM">1</field>
+                </shadow>
+			</value>
+		</block>
+    </category>
+    <category name="%{BKY_CATEGORY_OPERATORS}" id="operators" colour="#40BF4A" secondaryColour="#389438">
+        <block type="operator_add" id="operator_add">
+            <value name="NUM1">
+                <shadow type="math_number">
+                    <field name="NUM"></field>
+                </shadow>
+            </value>
+            <value name="NUM2">
+                <shadow type="math_number">
+                    <field name="NUM"></field>
+                </shadow>
+            </value>
+        </block>
+        <block type="operator_subtract" id="operator_subtract">
+            <value name="NUM1">
+                <shadow type="math_number">
+                    <field name="NUM"></field>
+                </shadow>
+            </value>
+            <value name="NUM2">
+                <shadow type="math_number">
+                    <field name="NUM"></field>
+                </shadow>
+            </value>
+        </block>
+        <block type="operator_multiply" id="operator_multiply">
+            <value name="NUM1">
+                <shadow type="math_number">
+                    <field name="NUM"></field>
+                </shadow>
+            </value>
+            <value name="NUM2">
+                <shadow type="math_number">
+                    <field name="NUM"></field>
+                </shadow>
+            </value>
+        </block>
+        <block type="operator_divide" id="operator_divide">
+            <value name="NUM1">
+                <shadow type="math_number">
+                    <field name="NUM"></field>
+                </shadow>
+            </value>
+            <value name="NUM2">
+                <shadow type="math_number">
+                    <field name="NUM"></field>
+                </shadow>
+            </value>
+        </block>
+        <block type="operator_random" id="operator_random">
+            <value name="FROM">
+                <shadow type="math_number">
+                    <field name="NUM">1</field>
+                </shadow>
+            </value>
+            <value name="TO">
+                <shadow type="math_number">
+                    <field name="NUM">10</field>
+                </shadow>
+            </value>
+        </block>
+        <block type="operator_lt" id="operator_lt">
+            <value name="OPERAND1">
+                <shadow type="text">
+                    <field name="TEXT"></field>
+                </shadow>
+            </value>
+            <value name="OPERAND2">
+                <shadow type="text">
+                    <field name="TEXT"></field>
+                </shadow>
+            </value>
+        </block>
+        <block type="operator_equals" id="operator_equals">
+            <value name="OPERAND1">
+                <shadow type="text">
+                    <field name="TEXT"></field>
+                </shadow>
+            </value>
+            <value name="OPERAND2">
+                <shadow type="text">
+                    <field name="TEXT"></field>
+                </shadow>
+            </value>
+        </block>
+        <block type="operator_gt" id="operator_gt">
+            <value name="OPERAND1">
+                <shadow type="text">
+                    <field name="TEXT"></field>
+                </shadow>
+            </value>
+            <value name="OPERAND2">
+                <shadow type="text">
+                    <field name="TEXT"></field>
+                </shadow>
+            </value>
+        </block>
+        <block type="operator_and" id="operator_and"></block>
+        <block type="operator_or" id="operator_or"></block>
+        <block type="operator_not" id="operator_not"></block>
+        <block type="operator_join" id="operator_join">
+            <value name="STRING1">
+                <shadow type="text">
+                    <field name="TEXT">hello</field>
+                </shadow>
+            </value>
+            <value name="STRING2">
+                <shadow type="text">
+                    <field name="TEXT">world</field>
+                </shadow>
+            </value>
+        </block>
+        <block type="operator_mod" id="operator_mod">
+            <value name="NUM1">
+                <shadow type="math_number">
+                    <field name="NUM"></field>
+                </shadow>
+            </value>
+            <value name="NUM2">
+                <shadow type="math_number">
+                    <field name="NUM"></field>
+                </shadow>
+            </value>
+        </block>
+        <block type="operator_round" id="operator_round">
+            <value name="NUM">
+                <shadow type="math_number">
+                    <field name="NUM"></field>
+                </shadow>
+            </value>
+        </block>
+        <block type="operator_mathop" id="operator_mathop">
+			<field name="OPERATOR">sqrt</field>
+            <value name="NUM">
+                <shadow type="math_number">
+                    <field name="NUM"></field>
+                </shadow>
+            </value>
+        </block>
+    </category>
+    <category name="%{BKY_CATEGORY_VARIABLES}" id="data" colour="#FF8C1A" secondaryColour="#DB6E00" custom="VARIABLE">
+	</category>
+    <category name="Entrées-sorties" id="extensions" colour="#FF6680" secondaryColour="#FF4D6A" iconURI="./js/scratch/media/extensions/wedo2-block-icon.svg" showStatusButton="false">
+			<block type="looks_say" id="looks_say">
+				<value name="MESSAGE">
+					<shadow type="text">
+						<field name="TEXT"></field>
+					</shadow>
+				</value>
+			</block>
+			<block type="sofuspy_sortie"><field name="OP">renvoyer</field></block>
+    </category>
+    <category name="Sous-programmes" id="more" colour="#FF6680" secondaryColour="#FF4D6A" custom="PROCEDURE"></category>
 	<category name="Atelier lycée" id="demos" colour="#FFFF00" secondaryColour="#FFFF00">
 		<button text="Simulation et moyenne" callbackKey="demo1" prog="../profs/raffinatp/python/simu1.xml" geo="../profs/raffinatp/python/geogebra.ggb">
 <![CDATA[
@@ -19,39 +351,5 @@
 - mets les simulations dans la colonne A du tableur
 ]]>
 		</button>
-	</category>
-	<category name="Seconde" id="seconde" colour="#FFFF00" secondaryColour="#FFFF00">
-			<button text="Pair/Impair" callbackKey="seconde1" prog="exos/python/q1_prog.xml" geo="exos/python/geogebra.ggb">
-<![CDATA[
-- clique sur les boutons 'Python' et 'Traduire'
-- complète le code python pour dire si n est pair ou impair
-- variante : complète d'abord les blocs avant de traduire
-]]>
-			</button>
-			<button text="Cercles concentriques" callbackKey="seconde2" prog="exos/python/q3_prog.xml" geo="exos/python/q3_geogebra.ggb">
-<![CDATA[
-a) clique sur le bouton 'Réinitialiser'
-b) écris un programme Python dessinant les 5 cercles :
-- soit en complétant les blocs, puis en les traduisant 
-- soit en traduisant les blocs, puis en complétant
-]]>
-			</button>
-			<button text="Tortue et curseur" callbackKey="seconde3" prog="exos/tortue/drapeaux_triangulaires/q4_prog.xml" geo="exos/tortue/drapeaux_triangulaires/q4_geogebra.ggb">
-<![CDATA[
-a) clique sur le bouton 'Réinitialiser'
-b) change la valeur du curseur GeoGebra
-c) ajoute un fanion aux drapeaux (carré de taille 1) :
-- soit en complétant les blocs, puis en les traduisant 
-- soit en traduisant les blocs, puis en complétant
-]]>
-			</button>
-			<button text="Newton" callbackKey="seconde4" prog="../profs/raffinatp/python/newton1.xml" geo="exos/python/geogebra.ggb">
-<![CDATA[
-- déplace le point A sur la courbe
-- traduis les blocs en python (bouton Traduire)
-- complète le code python l'instruction Parallele
-- ajoute une boucle pour la <a href="https://www.mathweb.fr/euclide/methode-de-newton/">méthode de Newton</a>
-]]>
-			</button>
 	</category>
 </xml>
