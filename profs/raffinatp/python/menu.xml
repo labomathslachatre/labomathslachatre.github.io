@@ -35,14 +35,14 @@ c) ajoute un fanion aux drapeaux (carré de taille 1) :
 			</button>
 			<button text="Chat c'est chouette" callbackKey="seconde5" prog="../profs/raffinatp/python/chatcestchouette1.xml" geo="../profs/raffinatp/python/tableur.ggb">
 <![CDATA[
-Termine cet exercice du Rallye maths 2022 (<a href="https://www.rallyemathematiqueducentre.fr/_files/ugd/5a9b73_19e981e827e941b997ac806d0c2afd34.pdf">chat c'est chouette</a>)
+Termine cet exercice du Rallye maths 2020 (<a href="https://www.rallyemathematiqueducentre.fr/_files/ugd/5a9b73_19e981e827e941b997ac806d0c2afd34.pdf">chat c'est chouette</a>)
 - soit en complétant les blocs, puis en les traduisant 
 - soit en traduisant les blocs, puis en complétant le code
 ]]>
 			</button>
 			<button text="Balle errante" callbackKey="seconde6" prog="../profs/raffinatp/python/balleerrante1.xml" geo="../profs/raffinatp/python/repere.ggb">
 <![CDATA[
-Termine cet exercice du Rallye maths 2020 (<a href="https://www.rallyemathematiqueducentre.fr/_files/ugd/ce79c3_28ee2d806262463b8ae4fce18598a3d1.pdf">chat c'est chouette</a>)
+Termine cet exercice du Rallye maths 2022 (<a href="https://www.rallyemathematiqueducentre.fr/_files/ugd/ce79c3_28ee2d806262463b8ae4fce18598a3d1.pdf">balle errante</a>)
 - soit en complétant les blocs, puis en les traduisant 
 - soit en traduisant les blocs, puis en complétant le code
 ]]>
@@ -180,6 +180,30 @@ Termine cet exercice du Rallye maths 2020 (<a href="https://www.rallyemathematiq
 		</block>
     </category>
     <category name="%{BKY_CATEGORY_OPERATORS}" id="operators" colour="#40BF4A" secondaryColour="#389438">
+        <block type="operator_add_substract" id="operator_add_substract">
+            <value name="NUM1">
+                <shadow type="math_number">
+                    <field name="NUM"></field>
+                </shadow>
+            </value>
+            <value name="NUM2">
+                <shadow type="math_number">
+                    <field name="NUM"></field>
+                </shadow>
+            </value>
+        </block>
+        <block type="operator_lt_equals" id="operator_lt_equals">
+            <value name="OPERAND1">
+                <shadow type="text">
+                    <field name="TEXT"></field>
+                </shadow>
+            </value>
+            <value name="OPERAND2">
+                <shadow type="text">
+                    <field name="TEXT"></field>
+                </shadow>
+            </value>
+        </block>
         <block type="operator_add" id="operator_add">
             <value name="NUM1">
                 <shadow type="math_number">
