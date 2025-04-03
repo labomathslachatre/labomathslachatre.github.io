@@ -180,30 +180,6 @@ Termine cet exercice du Rallye maths 2022 (<a href="https://www.rallyemathematiq
 		</block>
     </category>
     <category name="%{BKY_CATEGORY_OPERATORS}" id="operators" colour="#40BF4A" secondaryColour="#389438">
-        <block type="operator_add_substract" id="operator_add_substract">
-            <value name="NUM1">
-                <shadow type="math_number">
-                    <field name="NUM"></field>
-                </shadow>
-            </value>
-            <value name="NUM2">
-                <shadow type="math_number">
-                    <field name="NUM"></field>
-                </shadow>
-            </value>
-        </block>
-        <block type="operator_lt_equals" id="operator_lt_equals">
-            <value name="OPERAND1">
-                <shadow type="text">
-                    <field name="TEXT"></field>
-                </shadow>
-            </value>
-            <value name="OPERAND2">
-                <shadow type="text">
-                    <field name="TEXT"></field>
-                </shadow>
-            </value>
-        </block>
         <block type="operator_add" id="operator_add">
             <value name="NUM1">
                 <shadow type="math_number">
