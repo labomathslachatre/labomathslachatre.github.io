@@ -112,17 +112,17 @@
 					<option value="si">instructions conditionnelles</option>
 					<option value="repeter">boucles</option>
 					<option value="python">python</option>
+					<option value="rallye_math">rallye math</option>
 					<option value="">----- tortue -----</option>
 					<option value="drapeaux">drapeaux</option>
 					<option value="drapeaux_triangulaires">drapeaux triangulaires</option>
-					<option value="pavage_triangles">pavage triangulaire</option>
 					<option value="">----- geometrie -----</option>
+					<option value="triangles">triangles</option>
 					<option value="emoji">emoji</option>
 					<option value="chat">chat</option>
 					<option value="robot">robot</option>
 					<option value="elephant">elephant</option>
 					<option value="sangoku">sangoku</option>
-					<option value="triangles">triangles</option>
 					<option value="frise_gouttes">frise (translations)</option>
 					<option value="rosace">rosace (rotations)</option>
 					<option value="accueil">-- retour accueil --</option>
@@ -202,6 +202,9 @@ function activites() {
 	}
 	else if (exo=="python") {
 		Blockly.config.url = "exos/python";
+	}
+	else if (exo=="rallye_math") {
+		Blockly.config.url = "exos/python/rallye";
 	}
 	else if (exo=="rosace") {
 		Blockly.config.url = "exos/geometrie/rosace";
